@@ -1,0 +1,15 @@
+@import "../../../variables.scss";
+.mainWrapper {
+  background-color: aliceblue;
+}
+.mainContentWrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1210px;
+  margin: 0 auto;
+  background-color: black;
+}
+
+h3 {
+  color: red;
+}

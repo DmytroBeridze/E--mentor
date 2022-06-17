@@ -1,13 +1,23 @@
-.headerWrapper {
+@import "../../variables.scss";
+.header {
+  background-color: $c-green;
+}
+
+// .headerWrapper {
+//   max-width: 1210px;
+//   margin: 0 auto;
+// }
+
+.navWrapper {
   display: flex;
   justify-content: space-between;
   max-width: 1210px;
   margin: 0 auto;
   padding: 40px 20px;
-  background-color: aquamarine;
+  border: 2px solid rgb(255, 142, 127);
 }
-.logoWrap {
-}
+// .logoWrap {
+// }
 .logo {
   margin-right: 10px;
 }
@@ -23,4 +33,5 @@
   margin-right: 20px;
   cursor: pointer;
   text-decoration: none;
+  color: $c-textDark;
 }
