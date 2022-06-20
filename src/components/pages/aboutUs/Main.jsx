@@ -1,9 +1,10 @@
+import Navbar from "../../navbar/Navbar";
 import "./main.scss";
 const Main = () => {
   return (
     <div className="mainContainer">
       <div className="mainContentWrapper">
-        <h3>AboutUs</h3>
+        <Navbar></Navbar>
       </div>
     </div>
   );
