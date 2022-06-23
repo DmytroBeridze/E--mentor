@@ -1,4 +1,6 @@
 import styles from "./app.scss";
+// Імпорт спрайта__________________
+
 import Header from "./components/header/Header";
 
 function App() {

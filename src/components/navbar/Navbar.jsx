@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import { MenuItems } from "./MenuItems";
+
 import "./navbar.scss";
 
 class Navbar extends Component {
@@ -24,7 +25,7 @@ class Navbar extends Component {
         <ul className="nav-menu">
           {MenuItems.map((item, index) => {
             return (
-              <li key={index}>
+              <li key={index} className="li">
                 <a href={item.url} className={item.cName}>
                   {" "}
                   {item.title}

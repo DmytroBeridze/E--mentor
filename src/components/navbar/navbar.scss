@@ -22,22 +22,42 @@
 .nav-menu :last-child {
   padding-right: 10px;
   border-right: none;
+  border-top: none;
+
+  border-color: transparent;
 }
+
 .nav-menu :first-child {
   padding-left: 10px;
   border-left: none;
+  border-top: none;
+  border-color: transparent;
 }
 
-li {
+.li {
   padding: 5px 30px;
-  transition: 0.5s;
-  border: 1px solid transparent;
+  transition: 0.3s;
+  border: 1px solid;
+  border-color: transparent;
 }
 
-li:hover {
+.li:hover {
+  //   background-color: var(--c-hoverGreen);
+  border-left: 1px solid var(--c-orange);
+  border-right: 1px solid var(--c-orange);
+  border-bottom: 1px solid var(--c-orange);
+}
+.li:last-of-type:hover {
   //   background-color: var(--c-hoverGreen);
   border: 1px solid var(--c-orange);
-  border-top: 1px solid transparent;
+  border-right: none;
+  border-top: none;
+}
+.li:first-of-type:hover {
+  //   background-color: var(--c-hoverGreen);
+  border: 1px solid var(--c-orange);
+  border-left: none;
+  border-top: none;
 }
 
 .nav-Links {

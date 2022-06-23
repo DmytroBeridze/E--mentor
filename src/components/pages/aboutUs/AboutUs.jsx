@@ -8,10 +8,15 @@ const AboutUs = () => {
     <>
       <div className={styles.mainPage}>
         <Main> </Main>
+
         <div className={styles.place}>
           <Teachers />
           <Teachers />
         </div>
+        <Teachers />
+        <Teachers />
+        <Teachers />
+        <Teachers />
       </div>
     </>
   );
