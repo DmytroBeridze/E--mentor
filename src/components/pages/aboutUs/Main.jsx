@@ -3,7 +3,9 @@ import "./main.scss";
 // import img1 from "../../../assets/photo/1.jpg";
 import Images from "../../../assets/photo/Images.jsx";
 // import Imgs from "../../../assets/photo/Imgs";
-import Button from "../../button/Button";
+// import Button from "../../button/Button";
+import { ButtonUniversal } from "../../button/ButtonUniversal";
+
 const Main = () => {
   return (
     <div className="mainContainer">
@@ -85,8 +87,6 @@ const Main = () => {
             />
             <div className="mainImageOne">
               <img src={Images.image1} alt="photo1" className="image" />
-
-              {/* <img className="imageOne" src={img1} alt="photo1" /> */}
             </div>
           </div>
           <div className="mainLogBlock">
@@ -94,6 +94,17 @@ const Main = () => {
             <div className="mainDescription">
               Курсы и видео-лекции по дизайну, копирайтингу, SMM, таргету и
               многим другим направлениям
+            </div>
+            {/* Button______________________ */}
+            {/* <Button name="Все направления" /> */}
+            <div className="testEffect">
+              {ButtonUniversal(
+                "var(--c-orange)",
+                "var(--c-white)",
+                "0px 20px",
+                "Все направления",
+                "50px 0 0 200px"
+              )}
             </div>
           </div>
           {/* Photo2______________________ */}
@@ -119,10 +130,10 @@ const Main = () => {
                   <g id="icomoon-ignore"></g>
                   <path
                     fill="none"
-                    stroke-linejoin="round"
-                    stroke-linecap="round"
-                    stroke-miterlimit="4"
-                    stroke-width="113.7778"
+                    strokeLinejoin="round"
+                    strokeLinecap="round"
+                    strokeMiterlimit="4"
+                    strokeWidth="113.7778"
                     stroke="#000"
                     d="M284.444 967.111l-227.556-234.894M284.444 967.111l227.556-234.894M284.444 967.111v-910.222"
                   ></path>
@@ -133,7 +144,6 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <Button name="GALAMAGA" />
     </div>
   );
 };
