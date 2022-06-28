@@ -16,6 +16,7 @@ import Lectures from "../pages/Lectures";
 import Tariffs from "../pages/Tariffs";
 import Blog from "../pages/Blog";
 import Contacts from "../pages/Contacts";
+import Navbar from "../navbar/Navbar";
 
 // let menus = [
 //   " О нас",

@@ -1,0 +1,81 @@
+.modalBackground {
+  max-width: 1440px;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 99;
+  background-color: var(--c-modalBack);
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modalContainer {
+  background-color: var(--c-orange);
+  max-width: 500px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: var(--c-modalBack) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+.buttonWrap {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.closeModalBtn {
+  width: 20px;
+  height: 20px;
+  align-self: end;
+  margin-right: 20px;
+
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 24px;
+}
+.buttonModal {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.buttonGreen {
+  background: var(--c-green);
+}
+.buttonGreen:hover {
+  background: var(--c-hoverGreen);
+  box-shadow: var(--c-modalBack) 0px 5px 15px;
+}
+.buttonRed {
+  background: var(--c-red);
+}
+.buttonRed:hover {
+  background: var(--c-hoverRed);
+  box-shadow: var(--c-modalBack) 0px 5px 15px;
+}
+.modalTitle {
+  text-align: center;
+}
+.modalInput {
+  width: 400px;
+  height: 40px;
+  border: none;
+  outline: 0;
+  background: var(--c-white);
+  font-size: 16px;
+
+  // outline-offset: 0;
+}
+.modalInput:hover {
+  border: 2px solid var(--c-green);
+}

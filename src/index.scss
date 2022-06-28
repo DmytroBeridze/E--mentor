@@ -7,7 +7,7 @@
 
 .wrapper {
   max-width: 1440px;
-  border: 2px solid rgb(216, 144, 144);
+
   margin: 0 auto;
 }
 
@@ -15,7 +15,12 @@
   --c-green: #10b582;
   --c-hoverGreen: #2b9674;
   --c-orange: #fa9f42;
+  --c-orangeSoft: #fda247;
   --c-hoverOrange: #e68d34;
+  --c-red: #d62d21;
+  --c-hoverRed: #b9251a;
   --c-white: #e5e5e5;
   --c-textDark: #353a5a;
+  --c-modalBack: rgba(0, 0, 0, 0.425);
+  --c-modalBackShadow: rgba(114, 3, 3, 0.596);
 }

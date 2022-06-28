@@ -3,9 +3,9 @@ import { useState } from "react";
 import "./buttonUniversal.scss";
 
 // * Побудова кнопки__________________
-const buttonActive = () => {
-  alert("Vivian");
-};
+// const buttonActive = () => {
+//   alert("Vivian");
+// };
 
 export const ButtonUniversal = (
   buttonColor,
@@ -28,7 +28,7 @@ export const ButtonUniversal = (
   return (
     <>
       <button
-        onClick={buttonActive}
+        // onClick={buttonActive}
         style={{
           // TODO_Чому назва стилю без тире в ДОМ переписана так як треба?____________________
           backgroundColor: buttonColor,
