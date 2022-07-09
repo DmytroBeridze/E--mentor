@@ -12,7 +12,9 @@ export const ButtonUniversal = (
   textColor,
   borderRadius,
   buttonName,
-  margin
+  margin,
+  effectColor,
+  effectStartPosition
 ) => {
   // *Збільшення кнопки_____________________
 
@@ -40,7 +42,10 @@ export const ButtonUniversal = (
         onMouseEnter={addStyle}
         onMouseLeave={addStyle}
       >
-        <div className={`effect ${mooveClass}`}></div>
+        <div
+          style={{ backgroundColor: effectColor, left: effectStartPosition }}
+          className={`effect ${mooveClass}`}
+        ></div>
         {buttonName}
       </button>
     </>

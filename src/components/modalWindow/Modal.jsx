@@ -1,9 +1,11 @@
 import classNames from "classnames";
-import React from "react";
+import React, { useState } from "react";
 import { useRef } from "react";
 import styles from "./modal.module.scss";
+import { ModalSubmodal } from "./ModalSubmodal";
+import { WindovYes } from "./WindovYes";
 
-function Modal({ closeModal }) {
+function Modal({ closeModal }, { closeSubModal }) {
   // const [openModal, setOpenModal] = useState(false);
   // setOpenModal((openModal) => !setOpenModal);
   const testRef = useRef(null);
@@ -11,14 +13,30 @@ function Modal({ closeModal }) {
     // console.log(testRef.current.value);
     if (testRef.current.value === "yes") {
       closeModal(false);
+      // } else if (testRef.current.value === "y") {
+      //   closeModal(false);
+      // !Проба коллбек_______________________
     } else if (testRef.current.value === "y") {
-      closeModal(false);
-    } else console.log("????????");
+      // closeModal(false);
+      setWindovYes(true);
+    } else if (testRef.current.value === "no") {
+      setOpenSubModal(true);
+    } else console.log("!!!!");
   };
+
+  const [openWindovYes, setWindovYes] = useState(false);
+
+  const [openSubModal, setOpenSubModal] = useState(false);
 
   return (
     <div className={styles.modalBackground}>
+      {openSubModal && <ModalSubmodal closeSubModal={setOpenSubModal} />}
+      {/* <button onClick={setOpenSubModal}>dfjhdfjjk</button> ; */}
       <div className={styles.modalContainer}>
+        {/* YesBUTTON_________________ */}
+        {/* <button onClick={() => setWindovYes(true)}>YESBUT</button> */}
+        {openWindovYes && <WindovYes closenWindovYes={setWindovYes} />}
+
         {/* Close button_____ */}
         <button
           className={styles.closeModalBtn}
@@ -37,13 +55,16 @@ function Modal({ closeModal }) {
           <input
             type="text"
             ref={testRef}
-            placeholder="    yes/no"
+            placeholder="yes/no"
             className={styles.modalInput}
           />
         </form>
-
         <div className={styles.buttonWrap}>
-          <button className={classNames(styles.buttonModal, styles.buttonRed)}>
+          {/* Button RED____________________________ */}
+          <button
+            className={classNames(styles.buttonModal, styles.buttonRed)}
+            onClick={setOpenSubModal}
+          >
             cancel
           </button>
 

@@ -1,0 +1,22 @@
+.modalWrapper {
+  max-width: 1440px;
+  position: fixed;
+  background-color: var(--c-modalBack);
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalSubmodalBlock {
+  width: 200px;
+  height: 150px;
+  background-color: aliceblue;
+  color: black;
+  text-align: center;
+  line-height: 150px;
+}

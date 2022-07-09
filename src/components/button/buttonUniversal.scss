@@ -6,38 +6,41 @@
   font-weight: 500;
   font-size: 16px;
   transition: 0.3s;
+  line-height: 40px;
+  padding-right: 20px;
 }
 .ButtonUniversal:hover {
   //   width: 300px;
   //   height: 100px;
+  // position: relative;
 }
 .grow {
   opacity: 0.9;
   font-size: 17px;
-  color: var(--c-green) !important;
+  // color: var(--c-green) !important;
   //   transform: scale(1.05);
   border-radius: 20px 20px 20px 0px !important;
 }
 .testEffect {
-  //   width: 200px;
-  //   height: 50px;
-  position: relative;
+  // position: relative;
 }
 
 .effect {
   width: 20px;
   height: 20px;
   border-radius: 50%;
+
   background-color: var(--c-orange);
-  position: absolute;
-  top: 55px;
-  left: 320px;
+  position: relative;
+  top: -10px;
+  // left: 100px;
   z-index: -2;
   transition: 1s;
   color: var(--c-green);
-  line-height: 40px;
-  font-size: 24px;
+  display: inline-block;
+  // line-height: 40px;
+  // font-size: 24px;
 }
 .moove {
-  transform: translateX(50px);
+  transform: translateX(100px);
 }

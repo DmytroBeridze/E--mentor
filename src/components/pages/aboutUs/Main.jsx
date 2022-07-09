@@ -4,13 +4,15 @@ import Images from "../../../assets/photo/Images.jsx";
 import { ButtonUniversal } from "../../button/ButtonUniversal";
 import { useState } from "react";
 import Modal from "../../modalWindow/Modal";
+import { ModalSubmodal } from "../../modalWindow/ModalSubmodal";
 // import img1 from "../../../assets/photo/1.jpg";
 // import Imgs from "../../../assets/photo/Imgs";
 // import Button from "../../button/Button";
 
 const Main = () => {
   const [openModal, setOpenModal] = useState(false);
-  console.log(setOpenModal);
+  // const [openSubModal, setOpenSubModal] = useState(false);
+
   // * Effect when howering over the photo================
   const [mouseState, setmouseState] = useState(false);
   const [mouseState1, setmouseState1] = useState(false);
@@ -19,7 +21,10 @@ const Main = () => {
     setmouseState((mouseState) => !mouseState);
   }
   function photoHover1() {
-    setmouseState1((mouseState1) => !mouseState1);
+    const timer = setTimeout(
+      () => setmouseState1((mouseState1) => !mouseState1),
+      300
+    );
   }
   let togglePhotoClass = mouseState ? "photoActive" : "null";
   let togglePhoto1Class = mouseState1 ? "photoActive1" : "null";
@@ -29,6 +34,8 @@ const Main = () => {
     <>
       <div className="mainContainer">
         {/* MODAL Window ++++++++++++++++++++++++++++++++++ */}
+        {/* {openSubModal && <ModalSubmodal closeSubModal={setOpenSubModal} />}
+        <button onClick={setOpenSubModal}>dfjhdfjjk</button> */}
         {openModal && <Modal closeModal={setOpenModal} />}
         <Navbar></Navbar>
         <div className="mainContentWrapper">
@@ -121,7 +128,7 @@ const Main = () => {
                 многим другим направлениям
               </div>
               {/* Button______________________ */}
-              {/* <Button name="Все направления" /> */}
+
               <div
                 className="testEffect"
                 onClick={() => {
@@ -132,8 +139,10 @@ const Main = () => {
                   "var(--c-orange)",
                   "var(--c-white)",
                   "0px 20px",
-                  "Все направления",
-                  "50px 0 0 170px"
+                  "Опитування",
+                  "50px 0 0 170px",
+                  "var(--c-orange)",
+                  "73px"
                 )}
               </div>
             </div>

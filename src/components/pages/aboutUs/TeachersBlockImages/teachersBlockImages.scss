@@ -1,0 +1,129 @@
+// .teacherContainer {
+//   background-color: var(--c-white);
+//   color: var(--c-textDark);
+// }
+// .contentContainer {
+//   display: flex;
+//   justify-content: space-between;
+//   max-width: 1210px;
+//   margin: 0 auto;
+// }
+.teacherDesc {
+  width: 500px;
+}
+.teacherTitle {
+  font-size: 58px;
+  margin-top: 65px;
+  margin-bottom: 20px;
+}
+.teacherContent {
+  line-height: 24px;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.imageGridContainer {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 170px 170px 170px;
+  gap: 30px;
+  //   width: 1000px;
+  //   height: 1000px;
+}
+.gridContentWrapper {
+  // display: flex;
+}
+.imageTitle {
+  text-align: center;
+  font-weight: 400;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.imageWrapper {
+  width: 170px;
+  height: 170px;
+  background-color: rgb(255, 208, 0);
+  overflow: hidden;
+  transition: 1s;
+  border-radius: 0px 0px 0px 80px;
+}
+.imageWrapper2 {
+  width: 170px;
+  height: 170px;
+  background-color: rgb(255, 208, 0);
+  overflow: hidden;
+  transition: 1s;
+  border-radius: 80px 0px;
+}
+.imageWrapper3 {
+  width: 170px;
+  height: 170px;
+  background-color: rgb(255, 208, 0);
+  overflow: hidden;
+  transition: 1s;
+  border-radius: 0px 0px 80px 0px;
+}
+.imageWrapper4 {
+  width: 170px;
+  height: 170px;
+  background-color: rgb(255, 208, 0);
+  overflow: hidden;
+  transition: 1s;
+  border-radius: 80px 0px 0px 0px;
+}
+.imageWrapper5 {
+  width: 170px;
+  height: 170px;
+  background-color: rgb(255, 208, 0);
+  overflow: hidden;
+  transition: 1s;
+  border-radius: 80px 0px;
+}
+.imageWrapper6 {
+  width: 170px;
+  height: 170px;
+  background-color: rgb(255, 208, 0);
+  overflow: hidden;
+  transition: 1s;
+  border-radius: 0px 80px 0px 0px;
+}
+.activeClass {
+  width: 170px;
+  height: 170px;
+  background-color: rgb(170, 141, 12);
+  border-radius: 0;
+}
+.activeClass2 {
+  width: 170px;
+  height: 170px;
+  background-color: rgb(119, 99, 8);
+  border-radius: 0;
+}
+.activeClass3 {
+  width: 170px;
+  height: 170px;
+  background-color: rgb(87, 71, 3);
+  border-radius: 0;
+}
+.activeClass4 {
+  width: 170px;
+  height: 170px;
+  background-color: rgb(54, 45, 3);
+  border-radius: 0;
+}
+.activeClass5 {
+  width: 170px;
+  height: 170px;
+  background-color: rgb(14, 12, 7);
+  border-radius: 0;
+}
+.activeClass6 {
+  width: 170px;
+  height: 170px;
+  background-color: rgb(14, 12, 7);
+  border-radius: 0;
+}
+.imageTeacher {
+  width: 100%;
+}

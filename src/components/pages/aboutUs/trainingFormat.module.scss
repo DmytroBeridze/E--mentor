@@ -1,0 +1,131 @@
+.trainingFormatWrapper {
+  background-color: var(--c-green);
+  color: var(--c-white);
+  padding: 120px 0;
+  position: relative;
+  // border-top: 3px solid var(--c-orange);
+  //   height: 602px;
+}
+.trainingFormatContainer {
+  max-width: 1210px;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* Image Block====================================== */
+.trainingFormatImageBlock {
+  position: relative;
+  height: 362px;
+}
+.trainingFormatBorder {
+  position: relative;
+  left: 30px;
+  transition: 0.5s;
+}
+.trainingFormatimage {
+  width: 470px;
+  height: 332px;
+  border-radius: 0px 120px 0px 0px;
+  overflow: hidden;
+  position: absolute;
+  top: 30px;
+}
+.imageTraining {
+  width: 100%;
+}
+.activeBorder {
+  // position: relative;
+  transform: translate(-40px, 40px);
+}
+
+// Text block===================================
+.textBlockContainer {
+  margin-left: 130px;
+}
+.textBlockTitle {
+  width: 500px;
+  height: 140px;
+
+  margin-bottom: 20px;
+}
+.textTitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 58px;
+}
+.textBlockDescription {
+  width: 478px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 50px;
+}
+// Випадаюче меню_____________
+.trainingMenu {
+  background-color: var(--c-orange);
+  // max-width: 1440px;
+  position: absolute;
+  width: 100%;
+
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 86;
+  top: 0;
+  transition: 0.8s;
+  // transform: translateY(200px);
+  height: 500px;
+}
+.menuActive {
+  height: 30px;
+  // opacity: 0;
+  transition: 0.2s;
+}
+// Виїзджаюча кнопка______________
+.buttonToglerTrainingMenu {
+  width: 40px;
+  height: 20px;
+
+  background: var(--c-orange);
+
+  margin: 0 auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+}
+
+.buttonToglerTrainingMenuActive {
+  transition: 1.2s;
+  transform: translateY(480px);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+// Close Button_________________
+.closeButton {
+  cursor: pointer;
+  // padding: 0 2px;
+}
+.closeButtonToggle {
+  width: 25px;
+  height: 2px;
+  background-color: var(--c-green);
+  margin: 5px;
+  transition: all ease 0.5s;
+}
+.openToggle:nth-child(1) {
+  transform: rotate(45deg) translateX(5px) translateY(5px);
+}
+.openToggle:nth-child(2) {
+  opacity: 0;
+  transform: translate(5px);
+}
+.openToggle:nth-child(3) {
+  transform: rotate(-45deg) translateX(4px) translateY(-5px);
+}

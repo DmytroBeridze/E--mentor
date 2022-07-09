@@ -1,23 +1,16 @@
 import styles from "./aboutAs.module.scss";
-
+import Images from "../../../assets/photo/Images";
 import Teachers from "./Teachers";
 import Main from "./Main";
+import { TrainingFormat } from "./TrainingFormat";
 
 const AboutUs = () => {
   return (
     <>
-      <div className={styles.mainPage}>
-        <Main> </Main>
+      <Main> </Main>
 
-        <div className={styles.place}>
-          <Teachers />
-          <Teachers />
-        </div>
-        <Teachers />
-        <Teachers />
-        <Teachers />
-        <Teachers />
-      </div>
+      <Teachers />
+      <TrainingFormat />
     </>
   );
 };

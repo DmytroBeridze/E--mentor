@@ -1,11 +1,62 @@
+.teacherContainer {
+  background-color: var(--c-white);
+  color: var(--c-textDark);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.contentContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1210px;
+  margin: 0 auto;
+}
+.lecturesWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+.lecturesNumbers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+}
+.lecturesNumbers:last-child {
+  margin-right: 0;
+}
+.number {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 58px;
+  color: var(--c-green);
+  margin-bottom: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.numberDesc {
+  width: 270px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0 22px;
+}
 .square {
   width: 250px;
   height: 250px;
   background-color: blue;
+
   transition: 1s;
 }
+// .square2 {
+//   width: 250px;
+//   height: 250px;
+//   border-bottom-left-radius: 100px;
+//   transition: 1s;
+//   overflow: hidden;
+// }
 .active {
-  border-radius: 50%;
+  border-radius: 50px;
   width: 250px;
   height: 250px;
   background-color: rgb(104, 104, 167);
