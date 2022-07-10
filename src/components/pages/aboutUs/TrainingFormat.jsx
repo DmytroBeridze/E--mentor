@@ -18,12 +18,15 @@ export const TrainingFormat = () => {
   const [togglecloseButton, setTogglecloseButton] = useState("");
   const [openButtonToglerTrainingMenu, setopenButtonToglerTrainingMenu] =
     useState("");
+  const [drink, setDrink] = useState("");
   function openMenu() {
     setOpen((open) => !open);
     setTogglecloseButton((togglecloseButton) => !togglecloseButton);
     setopenButtonToglerTrainingMenu(
       (openButtonToglerTrainingMenu) => !openButtonToglerTrainingMenu
     );
+    setDrink((drink) => !drink);
+    // setTimeout(() => setDrink((drink) => !drink), 300);
   }
 
   // const closeTrainingMenu()
@@ -82,7 +85,14 @@ export const TrainingFormat = () => {
                 [styles.menuActive]: open,
               })}
             >
-              <TrainingBlockResp></TrainingBlockResp>
+              {/* DRINK menue________________________ */}
+              {setDrink && <TrainingBlockResp closedrink={drink} />}
+              {/* <TrainingBlockResp
+              className={classNames(styles.trainingResp, {
+                [styles.trainingRespNone]: drink,
+              })}
+              ></TrainingBlockResp> */}
+
               <div
                 className={classNames(styles.buttonToglerTrainingMenu, {
                   [styles.buttonToglerTrainingMenuActive]:

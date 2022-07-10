@@ -2,12 +2,14 @@ import Axios from "axios";
 import React, { useEffect } from "react";
 import { useState } from "react";
 import styles from "./trainingBlockResp.module.scss";
+import classNames from "classnames";
 
-function TrainingBlockResp() {
+function TrainingBlockResp({ closedrink }) {
   const URL =
     "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita";
 
   const [test, setTest] = useState([]);
+  // const [drink, setDrink] = "";
 
   useEffect(() => {
     Axios.get(URL)
@@ -36,7 +38,12 @@ function TrainingBlockResp() {
   });
 
   return (
-    <div className={styles.trainingResp}>
+    <div
+      className={classNames(styles.trainingResp, {
+        [styles.trainingRespNone]: !closedrink,
+      })}
+    >
+      {/* <div className={styles.trainingResp}> */}
       <ul className={styles.trainingList}>{arr}</ul>
     </div>
   );
