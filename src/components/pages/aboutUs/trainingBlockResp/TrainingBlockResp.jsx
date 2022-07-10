@@ -20,8 +20,17 @@ function TrainingBlockResp() {
   const arr = test.map((data, id) => {
     return (
       <li key={id}>
-        <div>{data.strDrink}</div>
-        <div>{data.idDrink}</div> <img src={data.strDrinkThumb} alt="image1" />
+        <div className={styles.imageWrapper}>
+          <div className={styles.card}>
+            <img
+              src={data.strDrinkThumb}
+              alt="image1"
+              className={styles.cardImage}
+            />
+          </div>
+          <div className={styles.strDrink}>{data.strDrink}</div>
+          <div className={styles.instructions}>{data.strInstructions}</div>
+        </div>{" "}
       </li>
     );
   });
