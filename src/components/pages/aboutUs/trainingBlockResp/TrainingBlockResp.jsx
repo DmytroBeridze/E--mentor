@@ -21,6 +21,7 @@ function TrainingBlockResp({ closedrink }) {
   }, []);
   const arr = test.map((data, id) => {
     return (
+      // Присвоєння классу з даних з масиву___________________
       <li key={id}>
         <div className={styles.imageWrapper}>
           <div className={styles.card}>

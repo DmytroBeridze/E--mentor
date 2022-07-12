@@ -3,6 +3,7 @@ import Images from "../../../assets/photo/Images";
 import Teachers from "./Teachers";
 import Main from "./Main";
 import { TrainingFormat } from "./TrainingFormat";
+import SliderBlock from "./SliderBlock/SliderBlock";
 
 const AboutUs = () => {
   return (
@@ -11,6 +12,7 @@ const AboutUs = () => {
 
       <Teachers />
       <TrainingFormat />
+      <SliderBlock />
     </>
   );
 };

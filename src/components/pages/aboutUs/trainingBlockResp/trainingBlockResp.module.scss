@@ -6,22 +6,34 @@
   color: var(--c-textDark);
   // display: none;
   opacity: 1;
-  transition: 2s;
+  transition: cubic-bezier(0.49, 0.1, 0.4, 1.03) 1s;
+  // transition: cubic-bezier(0, 0.7, 0.87, 0.86) 1s;
+  transform: scale(1);
+  // pointer-events: none;
 }
 .trainingRespNone {
-  // width: 1400px;
-
-  // margin: 0 auto;
-  // margin-top: 50px;
-  // color: var(--c-textDark);
   // display: none;
   opacity: 0;
   transition: none;
+  transform: scale(0);
+  pointer-events: none;
 }
+
 .trainingList {
   display: flex;
   justify-content: space-around;
   list-style: none;
+}
+.trainingList li {
+  transition: 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0);
+  &:hover {
+    transform: scale(1.1);
+    border: 1px solid var(--c-green);
+  }
+}
+.trainingList li:nth-child(1) {
+  // transform: scale(1.1);
 }
 .imageWrapper {
   width: 200px;
@@ -31,6 +43,7 @@
   padding: 10px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
 }
+
 // .imageWrapper:nth-child(-n + 3) {
 //   margin-top: 30px;
 // }
@@ -49,4 +62,8 @@
 
 .instructions {
   font-size: 10px;
+}
+.Margarita {
+  border: 3px solid red;
+  background-color: aqua;
 }

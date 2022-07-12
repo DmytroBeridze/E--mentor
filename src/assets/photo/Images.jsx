@@ -12,4 +12,5 @@ const Images = {
   imageBorder: require("./border1.png"),
   imageBorder2: require("./border2.png"),
 };
+
 export default Images;

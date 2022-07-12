@@ -85,14 +85,6 @@ export const TrainingFormat = () => {
                 [styles.menuActive]: open,
               })}
             >
-              {/* DRINK menue________________________ */}
-              {setDrink && <TrainingBlockResp closedrink={drink} />}
-              {/* <TrainingBlockResp
-              className={classNames(styles.trainingResp, {
-                [styles.trainingRespNone]: drink,
-              })}
-              ></TrainingBlockResp> */}
-
               <div
                 className={classNames(styles.buttonToglerTrainingMenu, {
                   [styles.buttonToglerTrainingMenuActive]:
@@ -118,6 +110,8 @@ export const TrainingFormat = () => {
                   ></div>
                 </div>
               </div>
+              {/* DRINK menu________________________ */}
+              {setDrink && <TrainingBlockResp closedrink={drink} />}
               {/* <button className={styles.closeButton} onClick={openMenu}>
                 
                 X
