@@ -11,6 +11,20 @@ const Images = {
 
   imageBorder: require("./border1.png"),
   imageBorder2: require("./border2.png"),
+
+  //* Slider Photo____________________________
+  slideImage1: require("./sliderGallery/2_image.jpg.webp"),
+  slideImage2: require("./sliderGallery/14_image.jpg.webp"),
+  slideImage3: require("./sliderGallery/55_image.jpg.webp"),
+  slideImage4: require("./sliderGallery/61_image.jpg.webp"),
+  slideImage5: require("./sliderGallery/article-20200408_r550x376.jpg"),
+  slideImage6: require("./sliderGallery/besplatnoe-obuchenie.jpg"),
+  slideImage7: require("./sliderGallery/bimg2.jpg"),
+  slideImage8: require("./sliderGallery/images.jpg"),
+  slideImage9: require("./sliderGallery/imagesdyjj.jpg"),
+  slideImage10: require("./sliderGallery/imagesfdg.jpg"),
+  slideImage11: require("./sliderGallery/na-kampuse-v-universitete_.jpeg"),
+  slideImage12: require("./sliderGallery/otzyvy-pro-mfo-zaimer.jpg"),
 };
 
 export default Images;

@@ -26,5 +26,11 @@
 }
 .swiper-button-next,
 .swiper-button-prev {
-  color: #e5e5e5 !important;
+  color: var(--c-green) !important;
+}
+.swiper-pagination-bullet {
+  background-color: var(--c-green) !important;
+}
+.swiper-scrollbar-drag {
+  background-color: var(--c-modalBack) !important;
 }
