@@ -1,0 +1,68 @@
+.modalInformationWrapper {
+  max-width: 1440px;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.438);
+}
+.modalInformationWindow {
+  background-color: var(--c-orange);
+  max-width: 500px;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: var(--c-modalBack) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.modalInformationButton {
+  width: 20px;
+}
+.modalInformationForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+input {
+  width: 400px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+}
+
+.test:focus {
+  background-color: rgb(214, 208, 208);
+}
+
+.errorActive {
+  height: 30px;
+  background-color: var(--c-hoverRed);
+  color: var(--c-orange);
+
+  border-radius: 5px;
+}
+p {
+  margin: 5px;
+}
+.submitButton {
+  width: 200px;
+  background-color: var(--c-green);
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: 2s;
+
+  &:hover {
+    border: 1px solid var(--c-modalBack);
+  }
+}

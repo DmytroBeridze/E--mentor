@@ -4,6 +4,7 @@ import Teachers from "./Teachers";
 import Main from "./Main";
 import { TrainingFormat } from "./TrainingFormat";
 import SliderBlock from "./SliderBlock/SliderBlock";
+import InformationBlock from "./InformationBlock";
 
 const AboutUs = () => {
   return (
@@ -13,6 +14,7 @@ const AboutUs = () => {
       <Teachers />
       <TrainingFormat />
       <SliderBlock />
+      <InformationBlock />
     </>
   );
 };

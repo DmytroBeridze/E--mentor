@@ -6,8 +6,6 @@ import { Link, Route, Routes } from "react-router-dom";
 
 import { useState } from "react";
 
-// Підкреслення пунктів навігації______________
-
 // Сторінки____________________________________
 import AboutUs from "../pages/aboutUs/AboutUs";
 import Platform from "../pages/Platform";

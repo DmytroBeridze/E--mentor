@@ -1,0 +1,15 @@
+.formContainer {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+input {
+  background: rgb(253, 251, 253);
+  border: 1px solid grey;
+}

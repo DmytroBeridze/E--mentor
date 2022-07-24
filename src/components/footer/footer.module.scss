@@ -1,0 +1,20 @@
+.footerContainer {
+  max-width: 100%;
+  max-height: 100vh;
+  background-color: var(--c-white);
+}
+.footerContentWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerLogo,
+.footerQuestion {
+  color: red;
+}
+.footerList {
+  list-style: none;
+}
+.footLinks {
+  color: aqua;
+}

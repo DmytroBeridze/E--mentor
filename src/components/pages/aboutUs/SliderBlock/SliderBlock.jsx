@@ -10,6 +10,7 @@ import "swiper/scss/pagination";
 import "swiper/scss/scrollbar";
 import { SliderImages } from "../../../../assets/photo/sliderGallery/SliderImages";
 import { ButtonUniversal } from "../../../button/ButtonUniversal";
+import { Link } from "react-router-dom";
 
 const SliderBlock = () => {
   return (
@@ -64,15 +65,20 @@ const SliderBlock = () => {
             </SwiperSlide> */}
           </Swiper>
         </div>
-        {ButtonUniversal(
-          "var(--c-green)",
-          "var(--c-white)",
-          "0px 20px",
-          "Все курсы",
-          "",
-          "var(--c-green)",
-          "67px"
-        )}
+
+        <div className={styles.sliderBlockButton}>
+          <Link to="/courses">
+            {ButtonUniversal(
+              "var(--c-green)",
+              "var(--c-white)",
+              "0px 20px",
+              "Все курсы",
+              "",
+              "var(--c-green)",
+              "67px"
+            )}
+          </Link>
+        </div>
       </div>
     </>
   );
